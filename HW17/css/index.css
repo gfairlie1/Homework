@@ -1,0 +1,53 @@
+.header {
+    padding: 5%;
+    vertical-align: top;
+}
+.inline-blockH {
+    display: inline-block;
+    vertical-align: top;
+    padding: 1%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+#inline-blockLogo {
+    display: inline-block;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: bold;
+    color: lightskyblue;
+
+}
+.heroImg {
+    height: 600px;
+    width: 800px;
+    background-image: url(../images/flowers.jpg);
+    background-repeat: no-repeat center center fixed;
+    background-size: cover;
+}
+.content {
+    width: 800px;
+    margin: 0 auto;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.myWork {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    grid-template-areas: 
+        "CaseStudy1 CaseStudy2 CaseSudy3"
+        ;
+    background-color: lightskyblue;
+    height: 100px;
+    
+}
+.footer {
+    background-color: #373738;
+    padding: 5%;
+    vertical-align: bottom;
+}
+.inline-blockF {
+    display: inline-block;
+    vertical-align: top;
+    padding: 1%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
