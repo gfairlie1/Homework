@@ -8,6 +8,7 @@
     padding: 1%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
+    float: right;
 }
 #inline-blockLogo {
     display: inline-block;
@@ -18,16 +19,39 @@
 
 }
 .heroImg {
-    height: 600px;
-    width: 800px;
+    height: 500px;
+    width: 100%;
     background-image: url(../images/flowers.jpg);
-    background-repeat: no-repeat center center fixed;
-    background-size: cover;
-}
-.content {
-    width: 800px;
-    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: inline-start;
+    margin-left: auto;
+    margin-right: auto;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.content {
+    float: right;
+    bottom: 0;
+}
+.AboutMe {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #f4f4f8;
+}
+.text {
+    display: grid;
+    width: 40%;
+    padding: 2%
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+.portrait {
+    display: inline-block;
+    margin-right: 0;
+    margin-left: 40%;
+    top: 0;
+    padding: 3%;
+    margin-top: 0;
 }
 .myWork {
     display: grid;
@@ -41,7 +65,7 @@
     
 }
 .footer {
-    background-color: #373738;
+    background-color: #f4f4f8;
     padding: 5%;
     vertical-align: bottom;
 }
