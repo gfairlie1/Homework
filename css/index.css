@@ -1,9 +1,10 @@
+/*top navigation*/
+
 .header {
     padding: 5%;
     vertical-align: top;
 }
 .inline-blockH {
-    display: inline-block;
     vertical-align: top;
     padding: 1%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -15,9 +16,11 @@
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: italic;
     font-weight: bold;
-    color: lightskyblue;
-
+    color: cornflowerblue;
 }
+
+/*Hero Image Area*/
+
 .heroImg {
     height: 500px;
     width: 100%;
@@ -29,11 +32,26 @@
     margin-right: auto;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
 .content {
     float: right;
     bottom: 0;
 }
+#button {
+    text-align: center;
+    cursor: pointer;
+    color: black;
+    background-color: cornflowerblue;
+    border: black;
+}
+#button:hover {background-color:lightskyblue}
+  
+#button:active {
+    background-color: lightskyblue;
+    transform: scale(2,2);
+}
+
+/*About Me Section*/
+
 .AboutMe {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: #f4f4f8;
@@ -41,7 +59,7 @@
 .text {
     display: grid;
     width: 40%;
-    padding: 2%
+    padding: 2%;
     grid-template-rows: 1fr 1fr;
     gap: 10px;
 }
@@ -53,17 +71,67 @@
     padding: 3%;
     margin-top: 0;
 }
+
+/*Skills Section*/
+
+.mySkills {
+    background-color: cornflowerblue;
+    height: 170px;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2px;
+    height: 150px;
+}
+.skill1 {
+    width: 32%;
+    flex-direction: column;
+}
+.skill2 {
+    width: 32%;
+    flex-direction: column;
+}
+.skill3 {
+    width: 32%;
+}
+
+/*My Work or Case Studies Section*/
+
 .myWork {
+    background-color: cornflowerblue;
+    height: 350px;
+}
+.grid {
     display: grid;
+    padding: 10px;
+    margin: 20px;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
     grid-template-areas: 
         "CaseStudy1 CaseStudy2 CaseSudy3"
         ;
-    background-color: lightskyblue;
-    height: 100px;
-    
 }
+.CaseStudy1 {
+    background-color:#f4f4f8;
+    padding:10px;
+}
+.CaseStudy2 {
+    background-color:#f4f4f8;
+    padding:10px;
+}
+.CaseStudy3 {
+    background-color:#f4f4f8;
+    padding:10px;
+}
+.image {
+    width: 100%;
+    max-height: 100%;
+}
+
+/*Footer or Bottom Nav*/
+
 .footer {
     background-color: #f4f4f8;
     padding: 5%;
@@ -74,4 +142,18 @@
     vertical-align: top;
     padding: 1%;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*Responsive changes for smaller screens*/
+
+@media only screen and (max-width: 600) {
+    .grid {
+        grid-template-rows: 1fr 1fr 1fr; 
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            "CaseStudy1"
+            "CaseStudy2"
+            "CaseStudy3"
+            ;
+    }
 }
